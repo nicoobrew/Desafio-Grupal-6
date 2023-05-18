@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/aa5922055b.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/logofenix.png"
+                        height="75" alt="logo fenix"></a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse "
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"
+                                href="store.html"
+                                role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tienda
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="p0001.html">Iphone
+                                        14 Pro Max</a></li>
+                                <li><a class="dropdown-item"
+                                        href="iphone13.html">Iphone 13
+                                        Pro Max</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item"
+                                        href="s23ultra.html">Samsung
+                                        S23 Ultra</a></li>
+                                <li><a class="dropdown-item"
+                                        href="s22ultra.html">Samsung
+                                        S22 Ultra</a></li>
+                                <li><a class="dropdown-item"
+                                        href="sonyalfa.html">Camara Sony Alfa</a></li>
+                                <li><a class="dropdown-item"
+                                        href="sonyalfa.html">Camara Sony Alfa
+                                        6000</a></li>
+
+                                <li><a class="dropdown-item"
+                                        href="sonyalfa.html">Camara Sony Alfa
+                                        6400</a></li>
+                                <li><a class="dropdown-item"
+                                        href="tecladocougar.html">Teclado
+                                        Mecanico VantarMX</a></li>
+                                <li><a class="dropdown-item"
+                                        href="tecladocougar.html">Teclado
+                                        Mecanico Vantar</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="carrito.html">Como Comprar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="tiendas.html">Tiendas Oficiales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="carrito.html">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="login.html">Login</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search"
+                            placeholder="Busca tus productos"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <details id="Carrito">
+            <summary>Carrito</summary>
+            <div class="card">
+                <div class="card-header">Productos en el carrito</div>
+                <div class="card-body">
+                    <table id="tabla-carrito" class="table table-responsive">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio unidad</th>
+                                <th>Total Producto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <p class="text-end">Total: <b id="total-compra"></b></p>
+                    <button class="btn btn-primary text-end" id="boton-pago">Pagar</button>
+                </div>
+            </div>
+        </details>
+
+        <div class="col-sm text-center">
+            <h1 class="titulo"><b>TIENDA ONLINE FENIX</b> </h1>
+            <h2>Lo mejor en tecnologia, en un solo lugar</h2>
+            <h5>Tenemos mas de 15 años de experiencia</h5>
+            <h6>Seguridad en la compra | Rapidez en las entregas | Grandes
+                Precios</h6>
+        </div>
+
+        <div class="container">
+            <h1 class="mb-5 m-5 text-center ">Nuestros Productos</h1>
+        </div>
+
+        <section class="container mt-5">
+            <!-- <div class=""> -->
+            <div class="row justify-content-center">
+                <div class="card mb-4 col-md-2 mx-3" style="width: 18rem;">
+                    <img src="img/iphone14pro.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphone 14 Pro Max</h5>
+                        <p class="sku"><b>SKU</b> 0086</p>
+                        <p><b>Precio</b> $899.990</p>
+                        <p class="card-text">Deslumbra con el iPhone 14 Pro.
+                            Modelo de funcionamiento basado en Chip A16
+                            Bionic y CPU de 16 núcleos. Este teléfono posee
+                            pantalla Super Retina XDR 6,7 pulgadas y
+                            tecnología True Tone para un visionado óptimo.
+                            Apuesta con sistema de cámara dual de 48 Mpx con
+                            gran angular y ultra gran angular. Modelo E SIM
+                            (Dual )</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="p0001.html" class="card-link">Ver más</a>
+
+                        <div class="input-group mb-3 mt-3">
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="mas"
+                                data-producto="Iphone 14 Pro Max" type="button">+</button>
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="menos"
+                                data-producto="Iphone 14 Pro Max" type="button">-</button>
+                            <input type="number" class="form-control" disabled
+                                placeholder="0" data-producto="Iphone 14 Pro Max"
+                                aria-label="Cantidad de productos">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card mb-4 col-md-3 mx-3" style="width: 18rem;">
+                    <img src="img/iphone13pro.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphone 13 Pro Max</h5>
+                        <p class="sku"><b>SKU</b> 0087</p>
+                        <p><b>Precio</b> $699.990</p>
+                        <p class="card-text">Deslumbra con el iPhone 13 Pro.
+                            Modelo de funcionamiento basado en Chip A15
+                            Bionic y CPU de 16 núcleos. Este teléfono posee
+                            pantalla Super Retina XDR 6,7 pulgadas y
+                            tecnología True Tone para un visionado óptimo.
+                            Apuesta con sistema de cámara dual de 48 Mpx con
+                            gran angular y ultra gran angular. Modelo E SIM
+                            (Dual )</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="iphone13.html" class="card-link">Ver más</a>
+                        <a href="carrito.html" class="card-link">Comprar</a>
+                        <div class="input-group mb-3 mt-3">
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="mas"
+                                data-producto="Iphone 13 Pro Max" type="button">+</button>
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="menos"
+                                data-producto="Iphone 13 Pro Max" type="button">-</button>
+                            <input type="number" class="form-control" disabled
+                                placeholder="0" 
+                                data-producto="Iphone 13 Pro Max"
+                                aria-label="Cantidad de productos">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card mb-4 col-md-3 mx-3" style="width: 18rem;">
+                    <img src="img/s22ultra.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung S22 Ultra</h5>
+                        <p class="sku"><b>SKU</b> 0088</p>
+                        <p><b>Precio</b> $999.990</p>
+                        <p class="card-text">Deslumbra con el iPhone 14 Pro.
+                            Modelo de funcionamiento basado en Chip A16
+                            Bionic y CPU de 16 núcleos. Este teléfono posee
+                            pantalla Super Retina XDR 6,7 pulgadas y
+                            tecnología True Tone para un visionado óptimo.
+                            Apuesta con sistema de cámara dual de 48 Mpx con
+                            gran angular y ultra gran angular. Modelo E SIM
+                            (Dual )</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="s22ultra.html" class="card-link">Ver más</a>
+                        <a href="carrito.html" class="card-link">Comprar</a>
+                        <div class="input-group mb-3 mt-3">
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="mas"
+                                data-producto="Samsung S22 Ultra" type="button">+</button>
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="menos"
+                                data-producto="Samsung S22 Ultra" type="button">-</button>
+                            <input type="number" class="form-control" disabled
+                                placeholder="0" data-producto="Samsung S22 Ultra"
+                                aria-label="Cantidad de productos">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 col-md-3 mx-3" style="width: 18rem;">
+                    <img src="img/s23ultra.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung S23 Ultra</h5>
+                        <p class="sku"><b>SKU</b> 0089</p>
+                        <p><b>Precio</b> $1.299.990</p>
+                        <p class="card-text">Deslumbra con el iPhone 14 Pro.
+                            Modelo de funcionamiento basado en Chip A16
+                            Bionic y CPU de 16 núcleos. Este teléfono posee
+                            pantalla Super Retina XDR 6,7 pulgadas y
+                            tecnología True Tone para un visionado óptimo.
+                            Apuesta con sistema de cámara dual de 48 Mpx con
+                            gran angular y ultra gran angular. Modelo E SIM
+                            (Dual )</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="mousecougar.html" class="card-link">Ver más</a>
+                        <a href="carrito.html" class="card-link">Comprar</a>
+                        <div class="input-group mb-3 mt-3">
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="mas"
+                                data-producto="Samsung S23 Ultra" type="button">+</button>
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="menos"
+                                data-producto="Samsung S23 Ultra" type="button">-</button>
+                            <input type="number" class="form-control" disabled
+                                placeholder="0" data-producto="Samsung S23 Ultra"
+                                aria-label="Cantidad de productos">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 col-md-3 mx-3" style="width: 18rem;">
+                    <img src="img/sonyalfacam.webp" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Camara Sony Alfa6000</h5>
+                        <p class="sku"><b>SKU</b> 0090</p>
+                        <p><b>Precio</b> $499.990</p>
+                        <p class="card-text">Deslumbra con el iPhone 14 Pro.
+                            Modelo de funcionamiento basado en Chip A16
+                            Bionic y CPU de 16 núcleos. Este teléfono posee
+                            pantalla Super Retina XDR 6,7 pulgadas y
+                            tecnología True Tone para un visionado óptimo.
+                            Apuesta con sistema de cámara dual de 48 Mpx con
+                            gran angular y ultra gran angular. Modelo E SIM
+                            (Dual )</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="sonyalfa.html" class="card-link">Ver más</a>
+                        <a href="carrito.html" class="card-link">Comprar</a>
+                        <div class="input-group mb-3 mt-3">
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="mas"
+                                data-producto="Camara Sony Alfa6000"
+                                type="button">+</button>
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="menos"
+                                data-producto="Camara Sony Alfa6000"
+                                type="button">-</button>
+                            <input type="number" class="form-control" disabled
+                                placeholder="0"
+                                data-producto="Camara Sony Alfa6000"
+                                aria-label="Cantidad de productos">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 col-md-3 mx-3" style="width: 18rem;">
+                    <img src="img/sonyalfacam.webp" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Camara Sony Alfa6400</h5>
+                        <p class="sku"><b>SKU</b> 0090</p>
+                        <p><b>Precio</b> $499.990</p>
+                        <p class="card-text">Deslumbra con el iPhone 14 Pro.
+                            Modelo de funcionamiento basado en Chip A16
+                            Bionic y CPU de 16 núcleos. Este teléfono posee
+                            pantalla Super Retina XDR 6,7 pulgadas y
+                            tecnología True Tone para un visionado óptimo.
+                            Apuesta con sistema de cámara dual de 48 Mpx con
+                            gran angular y ultra gran angular. Modelo E SIM
+                            (Dual )</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="sonyalfa.html" class="card-link">Ver más</a>
+                        <a href="carrito.html" class="card-link">Comprar</a>
+                        <div class="input-group mb-3 mt-3">
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="mas"
+                                data-producto="Camara Sony Alfa6400"
+                                type="button">+</button>
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="menos"
+                                data-producto="Camara Sony Alfa6400"
+                                type="button">-</button>
+                            <input type="number" class="form-control" disabled
+                                placeholder="0"
+                                data-producto="Camara Sony Alfa6400"
+                                aria-label="Cantidad de productos">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 col-md-3 mx-3" style="width: 18rem;">
+                    <img src="img/tecladocougar.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado Mecanico VantarMX</h5>
+                        <p class="sku"><b>SKU</b> 0091</p>
+                        <p><b>Precio</b> $99.990</p>
+                        <p class="card-text">Deslumbra con el iPhone 14 Pro.
+                            Modelo de funcionamiento basado en Chip A16
+                            Bionic y CPU de 16 núcleos. Este teléfono posee
+                            pantalla Super Retina XDR 6,7 pulgadas y
+                            tecnología True Tone para un visionado óptimo.
+                            Apuesta con sistema de cámara dual de 48 Mpx con
+                            gran angular y ultra gran angular. Modelo E SIM
+                            (Dual )</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="tecladocougar.html" class="card-link">Ver
+                            más</a>
+                        <a href="carrito.html" class="card-link">Comprar</a>
+                        <div class="input-group mb-3 mt-3">
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="mas"
+                                data-producto="Teclado Mecanico VantarMX"
+                                type="button">+</button>
+                            <button class="btn btn-outline-secondary
+                                boton-producto" data-op="menos"
+                                data-producto="Teclado Mecanico VantarMX"
+                                type="button">-</button>
+                            <input type="number" class="form-control" disabled
+                                placeholder="0"
+                                data-producto="Teclado Mecanico VantarMX"
+                                aria-label="Cantidad de productos">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 col-md-3 mx-3" style="width: 18rem;">
+                    <img src="img/tecladocougar.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado Mecanico Vantar</h5>
+                        <p class="sku"><b>SKU</b> 0091</p>
+                        <p><b>Precio</b> $99.990</p>
+                        <p class="card-text">Deslumbra con el iPhone 14 Pro.
+                            Modelo de funcionamiento basado en Chip A16
+                            Bionic y CPU de 16 núcleos. Este teléfono posee
+                            pantalla Super Retina XDR 6,7 pulgadas y
+                            tecnología True Tone para un visionado óptimo.
+                            Apuesta con sistema de cámara dual de 48 Mpx con
+                            gran angular y ultra gran angular. Modelo E SIM
+                            (Dual )</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="tecladocougar.html" class="card-link">Ver
+                            más</a>
+                        <a href="carrito.html" class="card-link">Comprar</a>
+                    </div>
+
+                    <div class="input-group mb-3 mt-3">
+                        <button class="btn btn-outline-secondary boton-producto"
+                            data-op="mas"
+                            data-producto="Teclado Mecanico Vantar"
+                            type="button">+</button>
+                        <button class="btn btn-outline-secondary boton-producto"
+                            data-op="menos"
+                            data-producto="Teclado Mecanico Vantar"
+                            type="button">-</button>
+                        <input type="number" class="form-control" disabled
+                            placeholder="0"
+                            data-producto="Teclado Mecanico Vantar"
+                            aria-label="Cantidad de productos">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container text-center descargar">
+            <div class="card mb-4 mx-3">
+                <img src="img/dpdf.svg" class="card-img-top"
+                    height="150" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Descarga nuestro folleto</h5>
+                    <p class="card-text">Some quick example text to
+                        build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="docdd.pdf" class="btn btn-primary">Descargar</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Marcas de la tienda -->
+        <div class="container text-center">
+            <div>
+                <h2><b>Nuestras marcas</b></h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="img/applelogo.png" alt="" height="150">
+                </div>
+                <div class="col">
+                    <img src="img/cougarlogo.png" alt="" height="150">
+                </div>
+                <div class="col">
+                    <img src="img/samsunglogo.png" alt=""
+                        height="150">
+                </div>
+                <div class="col">
+                    <img src="img/sonylogo.png" alt="" height="150">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Seccion testimonios -->
+        <div class="accordion container-sm testimonios"
+            id="accordionExample">
+            <h2 class="text-center"><b> Nuestros Clientes Opinan</b></h2>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne">
+                        Lucas Olivera
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse
+                    show"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong>
+                        It is shown by default, until the collapse
+                        plugin adds
+                        the appropriate classes that we use to style
+                        each
+                        element. These classes control the overall
+                        appearance,
+                        as well as the showing and hiding via CSS
+                        transitions.
+                        You can modify any of this with custom CSS or
+                        overriding
+                        our default variables. It's also worth noting
+                        that just
+                        about any HTML can go within the <code>.accordion-body</code>,
+                        though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        Maria Sanchez
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse
+                    collapse"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion
+                            body.</strong>
+                        It is hidden by default, until the collapse
+                        plugin adds
+                        the appropriate classes that we use to style
+                        each
+                        element. These classes control the overall
+                        appearance,
+                        as well as the showing and hiding via CSS
+                        transitions.
+                        You can modify any of this with custom CSS or
+                        overriding
+                        our default variables. It's also worth noting
+                        that just
+                        about any HTML can go within the <code>.accordion-body</code>,
+                        though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree">
+                        Rocio Latham
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse
+                    collapse"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong>
+                        It is hidden by default, until the collapse
+                        plugin adds
+                        the appropriate classes that we use to style
+                        each
+                        element. These classes control the overall
+                        appearance,
+                        as well as the showing and hiding via CSS
+                        transitions.
+                        You can modify any of this with custom CSS or
+                        overriding
+                        our default variables. It's also worth noting
+                        that just
+                        about any HTML can go within the <code>.accordion-body</code>,
+                        though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ubicacion en el mapa -->
+        <div class="container-sm center maps">
+            <h2 class="text-center"><b>Encuentranos aqui</b></h2>
+            <iframe
+                id="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21990.93839822125!2d-71.22798300770104!3d-34.98235226829465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966457a004dd0e11%3A0xa4292e7b41eb2493!2sTottus!5e0!3m2!1ses-419!2scl!4v1682470821459!5m2!1ses-419!2scl"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br>
+        </div>
+        <!-- Footer -->
+<footer class="text-center">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Visita nuestras redes sociales:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Tienda Fenix Online
+            </h6>
+            <img src="img/logofenix.png" alt="logo fenix" class="w-50">
+            
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Productos
+            </h6>
+            <p>
+              <a href="iphone13.html" class="text-reset">Iphone 13 Pro Max</a>
+            </p>
+            <p>
+              <a href="iphone13.html" class="text-reset">Iphone 14 Pro Max</a>
+            </p>
+            <p>
+              <a href="s22ultra.html" class="text-reset">Samsung S22 Ultra</a>
+            </p>
+            <p>
+              <a href="s23ultra.html" class="text-reset">Samsung S23 Ultra</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+            <p><i class="fas fa-home me-3"></i> Estado 336, Curico</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@fenixonline.cl
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 56 9 234 567 88</p>
+           
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright <b>Tienda Online Fenix </b>- Todos
+      los derechos reservados
+      
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+        <script src="/js/logica.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
